@@ -1,0 +1,27 @@
+# Visual Studio 기본 무시 항목
+.vs/
+*.user
+*.suo
+*.ncb
+*.vcxproj.user
+*.vcproj.*.user
+*.pdb
+*.obj
+*.exe
+*.dll
+*.log
+*.tlog
+*.ipch
+*.aps
+*.pch
+*.ilk
+*.idb
+*.tmp
+*.cache
+*.log
+*.o
+*.res
+Debug/
+Release/
+x64/
+x86/
