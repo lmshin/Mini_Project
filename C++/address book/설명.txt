@@ -18,3 +18,34 @@ Member / string name, string tel, string address, 생성자 setter, getter print
 기능제공(service)
 맴버변수 : dao 객체
 기능 : 1. 추가 : 키보드로 이름, 전화 주소 입력받음 => Member에 담음 => dao.insert(Member 객체)
+
+<임의의 타입 배열>
+맴버변수 : 배열. 길이
+template <typename T>
+class MyArt{
+	T *arr; //임의의 타입 배열 주소
+	int len; //배열 길이
+
+public:
+	MyArr() {
+		arr = new T[6];
+		len=6;
+	}
+	MyArr(int len) {
+		arr = new T[len];
+		this->len = len;
+	}
+}
+
+
+상품등록
+상품번호(int, 자동할당), 상품명(string), 가격(int)
+
+상품등록
+상품번호로 검색
+이름으로 검색(여러개 검색될 수 있음)
+전체목록
+수정(가격수정)
+삭제
+ㅓ
+
