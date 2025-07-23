@@ -1,0 +1,31 @@
+﻿@page
+@model wineweb.Pages.AddModel
+@using wineweb.Models
+
+<h2>+ 와인 추가</h2>
+
+<form method="post">
+	<div>
+		<label>이름:</label>
+		<input asp-for="NewWine.Name" class="form-control"/>
+	</div>
+	<div>
+		<label>종류:</label>
+		<input asp-for="NewWine.Type" class="form-control"/>
+	</div>
+	<div>
+		<label>산지:</label>
+		<input asp-for="NewWine.Country" class="form-control"/>
+	</div>
+	<div>
+		<label>설명:</label>
+		<input asp-for="NewWine.Description" class="form-control"/>
+	</div>
+	<div>
+		<label>사진 URL:</label>
+		<input asp-for="NewWine.ImageUrl" class="form-control"/>
+	</div>
+	<br />
+	<button type="submit" class="btn btn-success">추가</button>
+	<a href="/Portfolio" class="btn btn-secondary">취소</a>
+</form>

@@ -1,0 +1,20 @@
+﻿@page
+@model wineweb.Pages.PortfolioModel
+@using wineweb.Models
+
+<h2> 와인 포트폴리오</h2>
+<a class=" btn btn-primary" href="/Add">+ 와인 추가</a>
+<hr /> 
+
+@foreach(var wine in Model.Wines)
+{
+	<div style="margin-bottom:30px;">
+		<h4>@wine.Name (@wine.Type) - @wine.Country</h4>
+		<img src="@wine.ImageUrl" style="max-width: 200px";/>
+		<p>@wine.Description</p>
+
+		<form method="post" asp-page-handler="Delete" asp-route-name="@wine.Name">
+			<button type="submit" class="btn btn-danger">삭제</button>
+		</form>
+	</div>
+}
